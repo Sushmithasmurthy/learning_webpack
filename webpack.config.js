@@ -32,7 +32,12 @@ const baseConfig = {
       hash: true,
       filename: './index.html'
     })
-  ]
+  ],
+  resolveLoader: {
+    alias: {
+      "tee-loader" : path.resolve(__dirname, 'tee-loader.js')
+    }
+  }
 
 };
 
@@ -49,6 +54,7 @@ const devPack = {
       APP_ENV: 'dev'
     })
   ]
+
 
 };
 
