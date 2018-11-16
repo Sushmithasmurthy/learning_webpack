@@ -4,7 +4,7 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "build": "webpack --env development --mode development",
+    "build": "webpack --env production --mode development",
     "watch": "npm run build -- --watch",
     "start": "nodemon -w webconfig.js -x webpack-dev-server --env development"
   },
