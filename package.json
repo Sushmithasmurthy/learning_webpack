@@ -4,17 +4,19 @@
   "description": "",
   "main": "app/index.js",
   "scripts": {
-    "build": "webpack --env production --mode development",
+    "build": "webpack --env development --mode development",
     "watch": "npm run build -- --watch",
     "start": "nodemon -w webconfig.js -x webpack-dev-server --env development"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router": "^4.3.1"
+    "react-router": "^4.3.1",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -22,10 +24,10 @@
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
-    "eslint": "^5.7.0",
     "http-server": "^0.11.1",
     "loader-utils": "^1.1.0",
     "nodemon": "^1.18.4",
+    "tslint": "^5.11.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",

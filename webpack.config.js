@@ -6,6 +6,7 @@ console.log('-- using webpack.config.js --');
 
 const baseConfig = {
   entry: './app/index.js',
+  devtool: 'eval',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'app.bundle.js',
@@ -26,7 +27,8 @@ const baseConfig = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      hash: true,
+      hash: false,
+      title: 'My Application',
       filename: './index.html'
     })
   ],
